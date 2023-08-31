@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+}
+
+div#container-drums {
+  max-width: max-content;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div[id^="key-"]>p {
+  position: relative;
+  bottom: 25px;
+  color: #222
+}
+
+div[id^="key-"] {
+  transition: box-shadow 175ms linear;
+  box-shadow: 0 0 5px 2px #ffffff50;
+  background-color: #404040;
+  height: 110px;
+  width: 120px;
+  font-size: xx-large;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
