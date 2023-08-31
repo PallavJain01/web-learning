@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  background-image: radial-gradient(#2d2d2dd0 2px, #000000 2px);
+  background-size: 40px 40px;
+}
+
+input#input-main {
+  all: unset;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  height: 60px;
+  width: 40%;
+  font-size: x-large;
+  background-color: #4d4d4df0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #d0d0d0 inset,
+    0 0 5px 1px #d0d0d0;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  color: #00ffff;
+  overflow:scroll
+}
+
+div#container-todos {
+  margin-top: calc(10% + 65px);
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  margin-top: 175px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: max-content;
+}
+
+div#container-todos>div>p {
+  all: inherit;
+  background-color: transparent;
+  max-width: fit-content;
+}
+
+div[id^="todo-"] {
+  border-radius: 10px;
+  height: 80px;
+  width: 750px;
+  background-color: #f0f0f0;
+  color: #404040;
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+}
