@@ -1,0 +1,37 @@
+<!--!TODO: WORK IN PROGRESS :!-->
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="calculator.css">
+  <script src="calculator.js"></script>
+  <title>Calculator Using HTML, CSS and Javascript</title>
+</head>
+
+<body>
+  <div id="container-text">
+    <input type="text" id="input" readonly="true" placeholder="0" />
+  </div>
+
+  <div id="container-buttons">
+    <button type="button" id="btn-0" onclick="addText(0)">0</button>
+    <button type="button" id="btn-1" onclick="addText(1)">1</button>
+    <button type="button" id="btn-2" onclick="addText(2)">2</button>
+    <button type="button" id="btn-3" onclick="addText(3)">3</button>
+    <button type="button" id="btn-4" onclick="addText(4)">4</button>
+    <button type="button" id="btn-5" onclick="addText(5)">5</button>
+    <button type="button" id="btn-6" onclick="addText(6)">6</button>
+    <button type="button" id="btn-7" onclick="addText(7)">7</button>
+    <button type="button" id="btn-8" onclick="addText(8)">8</button>
+    <button type="button" id="btn-9" onclick="addText(9)">9</button>
+      <button type="button" id="btn-plus" data-action="add"">+</button>
+      <button type="button" id="btn-minus" data-action="subtract"">-</button>
+      <button type="button" id="btn-multiply" data-action="multiply"">x</button>
+      <button type="button" id="btn-divide" data-action="divide"">÷</button>
+      <button type="button" id="btn-dot" data-action="dot"">.</button>
+      <button type="button" id="btn-ac" onclick="clearText()">AC</button>
+      <button type="button" id="btn-equals">=</button>
+    </div>
+</body>
+
+</html>

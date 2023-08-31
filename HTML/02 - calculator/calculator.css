@@ -1,0 +1,54 @@
+[id="btn-0"] {grid-area: btn0; border-bottom-left-radius: 15px;}
+[id="btn-1"] {grid-area: btn1}
+[id="btn-2"] {grid-area: btn2}
+[id="btn-3"] {grid-area: btn3}
+[id="btn-4"] {grid-area: btn4}
+[id="btn-5"] {grid-area: btn5}
+[id="btn-6"] {grid-area: btn6}
+[id="btn-7"] {grid-area: btn7}
+[id="btn-8"] {grid-area: btn8}
+[id="btn-9"] {grid-area: btn9}
+[id="btn-plus"] {grid-area: btnplus}
+[id="btn-minus"] {grid-area: btnminus}
+[id="btn-multiply"] {grid-area: btnmultiply}
+[id="btn-divide"] {grid-area: btndivide}
+[id="btn-dot"] {grid-area: btndot}
+[id="btn-ac"] {grid-area: btnac}
+[id="btn-equals"] {grid-area: btnequals; border-bottom-right-radius: 15px;}
+
+#input {
+  width: 400px;
+  height: 60px;
+  box-shadow: 0 0 2px 2.5px #69696950 inset;
+  font-size: xx-large;
+  text-align: right;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+button#btn-equals {
+  height: 240px;
+}
+
+button[id^="btn-"] {
+  width: 100px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: #00000010;
+}
+
+button[id^="btn-"]:hover {
+  background-color: #0000aa40;
+}
+
+div#container-buttons {
+  max-width: max-content;
+  display: grid;
+  gap: 0;
+  grid-template-areas:
+    'btnplus btnminus btnmultiply btndivide'
+    'btn7 btn8 btn9 btnequals'
+    'btn4 btn5 btn6 btnequals'
+    'btn1 btn2 btn3 btnequals'
+    'btn0 btndot btnac btnequals'
+}
