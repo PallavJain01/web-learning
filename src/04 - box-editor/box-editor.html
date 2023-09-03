@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <script src="box-editor.js"></script>
+  <link rel="stylesheet" href="box-editor.css">
+  <title>box-editor</title>
+</head>
+
+<body>
+  <div id="container-main">
+    <div id="container-options">
+      <h2 id="head-options">Options</h2>
+      <div id="container-input-r">
+        <label for="" id="label-input-r">Color-red</label>
+        <div id="container-input-r_value">
+          <input min="0" max="255" value="0" type="range" name="input-r" id="input-r">
+          <p id="input-r_value">0</p>
+        </div>
+      </div>
+
+      <div id="container-input-g">
+        <label for="" id="label-input-g">Color-green</label>
+        <div id="container-input-g_value">
+          <input min="0" max="255" value="0" type="range" name="input-g" id="input-g">
+          <p id="input-g_value">0</p>
+        </div>
+      </div>
+
+      <div id="container-input-b">
+        <label for="" id="label-input-b">Color-blue</label>
+        <div id="container-input-b_value">
+          <input min="0" max="255" value="0" type="range" name="input-b" id="input-b">
+          <p id="input-b_value">0</p>
+        </div>
+      </div>
+      
+      <div id="container-input-opacity">
+        <label for="" id="label-input-opacity">Opacity</label>
+        <div id="container-input-opacity_value">
+          <input type="range" value="1" min="0" max="1" step="0.01" name="input-opacity" id="input-opacity">
+          <p id="input-opacity_value">1</p>
+        </div>
+      </div>
+
+      <div id="container-input-border-radius">
+        <label for="" id="label-input-border-radius">Border-radius</label>
+        <div id="container-input-border-radius_value">
+          <input min="0" max="225" value="0" type="range" name="input-border-radius" id="input-border-radius">
+          <p id="input-border-radius_value">0px</p>
+        </div>
+      </div>
+    </div>
+    <div id="container-preview">
+      <h2 id="head-preview">Preview</h2>
+      <div id="preview-box"></div>
+    </div>
+    <div id="container-code">
+      <h2 id="head-code">Code</h2>
+      <p id="line-color"><span class="prop">background-color</span><span class="spec">:</span></span><span class="func"> rgb</span><span class="brac">(</span><span class="num">0</span><span class="spec">,</span><span class="num"> 0</span><span class="spec">,</span><span class="num"> 0</span><span class="brac">)</span><span class="spec">;</span></p>
+      <p id="line-opacity"><span class="prop">opacity</span><span class="spec">:</span><span class="num"> 1</span><span class="spec">;</span></p>
+      <p id="line-border-radius"><span class="prop">border-radius</span><span class="spec">:</span><span class="num"> 0</span><span class="px">px</span><span class="spec">;</span></p>
+    </div>
+    <p id="credit">UI inspired by
+      <a href="https://webcode.tools" target="_blank">webcode.tools</a>
+    </p>
+  </div>
+</body>
+
+</html>

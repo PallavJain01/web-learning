@@ -1,0 +1,155 @@
+:root {
+  --bgcolor-r: 0;
+  --bgcolor-g: 0;
+  --bgcolor-b: 0;
+  --bgcolor-opac: 255;
+  --bgcolor-rad: 0;
+  --color-accent: #1E2836
+}
+
+div#container-options {
+  grid-area: c-options;
+}
+
+div#container-preview {
+  grid-area: c-preview;
+}
+
+div#container-code {
+  grid-area: c-code;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: radial-gradient(#2d2d2d 1.6px, transparent 1.6px), radial-gradient(#2d2d2d 1.6px, #000000 1.6px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+div#container-main {
+  max-height: max-content;
+  max-width: max-content;
+  display: grid;
+  column-gap: 25px;
+  row-gap: 25px;
+  grid-template-areas:
+    'c-options c-preview'
+    'c-code c-code'
+    'credit credit';
+  position: absolute;
+  left: 50%;
+  top: 1svw;
+  transform: translateX(-50%);
+}
+
+h2[id^="head-"] {
+  color: white;
+  font-size: xx-large;
+  padding-left: 15px;
+}
+
+h2#head-preview {
+  margin-top: 0
+}
+
+input[type="range"] {
+  width: 45svw;
+  margin-left: 15px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: rgb(var(--bgcolor-r), var(--bgcolor-g), var(--bgcolor-b));
+  box-shadow: 0 0 5px 1px rgb(var(--bgcolor-r), var(--bgcolor-g), var(--bgcolor-b))
+}
+
+input#input-opacity::-webkit-slider-runnable-track {
+  background-color: rgb(var(--bgcolor-opac), var(--bgcolor-opac), var(--bgcolor-opac));
+  box-shadow: 0 0 5px 1px rgb(var(--bgcolor-opac), var(--bgcolor-opac), var(--bgcolor-opac))
+}
+
+input#input-border-radius::-webkit-slider-runnable-track{
+  background-color: rgb(var(--bgcolor-rad), var(--bgcolor-rad), var(--bgcolor-rad));
+  box-shadow: 0 0 5px 1px rgb(var(--bgcolor-rad), var(--bgcolor-rad), var(--bgcolor-rad))
+}
+
+div#container-options {
+  display: grid;
+  gap: 10px;
+  width: 50svw;
+  border-radius: 10px;
+  background-color: var(--color-accent);
+}
+
+label[id^="label-input-"],
+p[id$="_value"] {
+  color: aqua;
+  margin-left: 16.2px;
+  font-size: 17.5px;
+}
+
+p[id$="_value"] {
+  margin-top: 5px;
+}
+
+div#container-preview {
+  background-color: var(--color-accent);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+div#preview-box {
+  height: 450px;
+  width: 450px;
+  background-color: #000;
+}
+
+div#container-code {
+  height: fit-content;
+  width: auto;
+  background-color: var(--color-accent);
+  border-radius: 10px;
+}
+
+div#container-code>p[id^="line-"] {
+  padding-left: 15px;
+  font-size: 20px;
+  line-height: 10px;
+  color: #71BDFB
+}
+
+.spec {
+  color: #f0f0f0;
+}
+
+.px {
+  color: #1C6AE4;
+}
+
+.num {
+  color: #ED959C;
+}
+
+.func,
+.brac {
+  color: rgb(255, 227, 101);
+}
+
+p#credit {
+  color: aqua;
+  grid-area: credit;
+}
+
+p#credit>a {
+  color: aquamarine
+}
+
+* {
+  user-select: none;
+}
+
+div#container-code,
+div#container-code>*>* {
+  user-select: text !important;
+}
