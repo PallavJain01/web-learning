@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  opacity: 0.9;
+  background-image: radial-gradient(#2d2d2d 1.65px, transparent 1.65px), radial-gradient(#2d2d2d 1.65px, #000000 1.65px);
+  background-size: 66px 66px;
+  background-position: 0 0, 33px 33px;
+}
+
+div#container-clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+  border: 10px solid white;
+  box-shadow: 0 0 15px 1px #111111d0;
+  border-radius: 100%;
+}
+
+div[id^="hand-"] {
+  transform: rotate(90deg);
+  height: 5px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: #124da5;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform-origin: 100%;
+  transition: rotate 50ms linear;
+}
+
+div[id$="hour"] {
+  width: 30%;
+  left: 20%;
+  transition: rotate 500ms linear;
+}
+
+div[id$="minute"] {
+  width: 35%;
+  left: 15%;
+  transition: rotate 300ms linear;
+}
+
+div#time {
+  color: #124da5;
+  position: absolute;
+  font-size: 50px;
+  top: calc(50% + 200px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 5px 1px #f0f0f0;
+  border-radius: 15px;
+}
