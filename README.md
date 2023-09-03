@@ -1,23 +1,13 @@
 # web-learning
+- Repository created while learning about web development through projects
 
 ### Table of contents
 
-<table>
-  <tr><td>
+-|Name|Path
+-|-|-
+01|Loader|[src/01 - Loader](./src/01%20-%20loader/)
+02|Drumkit|[src/02 - Drumkit](./src/02%20-%20Drumkit/)
+03|Clock|[src/03 - Clock](./src/03%20-%20Clock/)
+04|Box-editor|[src/04 - box-editor](./src/04%20-%20box-editor/)
 
-## <div align=center>HTML</div>
-
-No.|Name
--|-
-01|[loader](./HTML/01%20-%20loader/)
-02|[calculator](./HTML/02%20-%20calculator/) (TODO)
-</td><td>
-
-## <div align=center>JS</div>
-
-No|Name
--|-
-01|[Drumkit](./JS/01%20-%20Drumkit/)
-02|[Clock](./JS/02%20-%20Clock/)
-
-</table>
+---
