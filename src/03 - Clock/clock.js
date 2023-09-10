@@ -26,9 +26,10 @@ function updateTime() {
   time.hour = new Date().getHours();
   time.minute = new Date().getMinutes();
   time.second = new Date().getSeconds();
-
-  document.getElementById("time").innerHTML =
-   `${((time.hour % 12) < 10) ? "0" + time.hour % 12 : time.hour % 12}:${(time.minute < 10) ? "0"+time.minute : time.minute}:${(time.second < 10) ? "0" + time.second : time.second}`;
+  let currTime = `${((time.hour % 12) < 10) ? "0" + time.hour % 12 : time.hour % 12}:${(time.minute < 10) ? "0"+time.minute : time.minute}:${(time.second < 10) ? "0" + time.second : time.second}`;
+  document.getElementById("time").innerHTML = currTime;
+  document.title = currTime
+   
 }
 
 setInterval(() => {
