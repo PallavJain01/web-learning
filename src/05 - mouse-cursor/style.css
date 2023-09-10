@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(25, 25, 25);
+  cursor: none;
+}
+
+div#cursor {
+  border-left: 5px solid #0f0;
+  border-top: 5px solid #0f0;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  animation: colored 4s linear infinite;
+  border-bottom-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+
+div#cursor-handle {
+  height: 5px;
+  width: 40px;
+  position: absolute;
+  background-color: #0f0;
+  transform: rotate(45deg);
+  z-index: -1;
+  animation: colored 4s linear infinite;
+  border-top-right-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+}
+
+@keyframes colored {
+  from {
+    filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 15px #0f0) hue-rotate(0deg);
+  }
+  to {
+    filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 15px #0f0) hue-rotate(360deg)
+  }
+}
