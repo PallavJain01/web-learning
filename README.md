@@ -8,8 +8,8 @@
 02|Drumkit|[src/02 - Drumkit](./src/02%20-%20Drumkit/)
 03|Clock|[src/03 - Clock](./src/03%20-%20Clock/)
 04|Box-editor|[src/04 - Box-editor](./src/04%20-%20box-editor/)
+05|Mouse-cursor|[src/05 - Mouse-cursor](./src/05%20-%20mouse-cursor/)
+06|Glitched-Text|[src/06 - Glitched-text](./src/06%20-%20glitched-text/)
 
-
-#### [Screenshots](./screnshots/screenshots.md)
-
+#### [Showcase/Demo](./showcase/)
 ---
