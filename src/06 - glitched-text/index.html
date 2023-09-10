@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Glitched text</title>
+</head>
+
+<body>
+  <div id="container-main">
+    <input placeholder="frequency" value=5 type="number" name="input-frequency" id="input-frequency" min="0" max="50" title="frequency of program">
+    <input placeholder="type something..." value="This is some text" type="text" name="input-text" id="input-text" title="main text" />
+    <div id="container-text">
+      <p id="text">This is some text</p>
+    </div>
+    <input type="button" value="Glitch the text" id="input-button" onclick='glitchText("text")' title="generate glitched text!">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
