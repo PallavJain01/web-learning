@@ -10,6 +10,7 @@
 04|Box-editor|[src/04 - Box-editor](./src/04%20-%20box-editor/)
 05|Mouse-cursor|[src/05 - Mouse-cursor](./src/05%20-%20mouse-cursor/)
 06|Glitched-Text|[src/06 - Glitched-text](./src/06%20-%20glitched-text/)
+07|Calculator|[src/07 - Calculator](./src/07%20-%20calculator/)
 
 #### [Showcase/Demo](./showcase/)
 ---
