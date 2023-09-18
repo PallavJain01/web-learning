@@ -2,7 +2,7 @@
 - Repository created while learning about web development through projects
 
 ### Table of contents
--|Name|Path
+S.no|Name|Path
 -|-|-
 01|Loader|[src/01 - Loader](./src/01%20-%20loader/)
 02|Drumkit|[src/02 - Drumkit](./src/02%20-%20Drumkit/)
