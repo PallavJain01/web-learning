@@ -55,7 +55,7 @@ h2#head-preview {
 }
 
 input[type="range"] {
-  width: 45svw;
+  width: 40svw;
   margin-left: 15px;
 }
 
@@ -77,7 +77,7 @@ input#input-border-radius::-webkit-slider-runnable-track{
 div#container-options {
   display: grid;
   gap: 10px;
-  width: 50svw;
+  width: 42.5svw;
   border-radius: 10px;
   background-color: var(--color-accent);
 }
