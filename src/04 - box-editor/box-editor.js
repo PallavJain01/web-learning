@@ -16,6 +16,10 @@ function updateCode(_values) {
   document.getElementById("container-code").innerHTML = code;
 }
 
+function copyText() {
+  navigator.clipboard.writeText(document.getElementById("container-code").innerText.slice(6, 999));
+}
+
 function updateValue(_values) {
   let elements = {
     "r": document.getElementById("input-r_value"),
