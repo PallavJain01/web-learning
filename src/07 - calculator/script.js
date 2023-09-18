@@ -16,7 +16,7 @@ function handleAction(action) {
     ? addOperand(action)
     : (action != "=")
       ? clearText() // guaranteed to not be a number and if not operand as well, then it is AC
-      : output.value = eval(output.value); // doesn't support BODMAS sadly
+      : output.value = eval(output.value);
 }
 
 function clearText() {
