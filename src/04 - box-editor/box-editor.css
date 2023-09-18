@@ -119,6 +119,13 @@ div#container-code>p[id^="line-"] {
   color: #71BDFB
 }
 
+.fa-copy {
+  position: absolute;
+  left: calc(100% - 50px);
+  top: calc(100% - 235px);
+  cursor: pointer;
+}
+
 .spec {
   color: #f0f0f0;
 }
