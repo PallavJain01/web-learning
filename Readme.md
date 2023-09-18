@@ -12,6 +12,6 @@ S.no|Name|Path
 06|Glitched-Text|[src/06 - Glitched-text](./src/06%20-%20glitched-text/)
 07|Calculator|[src/07 - Calculator](./src/07%20-%20calculator/)
 
-#### [Video Live preview](https://pallavjain01.github.io/web-learning)
+#### [View Live preview](https://pallavjain01.github.io/web-learning)
 
 ---
