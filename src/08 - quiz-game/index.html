@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/da072b05da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz Game</title>
+</head>
+
+<body>
+  <div id="container-main">
+    <dialog id="add-question-dialog">
+      <textarea type="text" id="inp-question" spellcheck="false" autocomplete="false" placeholder="Question..."></textarea>
+      <div id="inp-options" placeholder="">
+        <input type="text" name="option-1" id="option-1" placeholder="Option 1..." autocomplete="off">
+        <input type="text" name="option-2" id="option-2" placeholder="Option 2..." autocomplete="off">
+        <input type="text" name="option-3" id="option-3" placeholder="Option 3..." autocomplete="off">
+        <input type="text" name="option-4" id="option-4" placeholder="Option 4..." autocomplete="off">
+        <input type="number" name="inp-correct-ans" id="inp-correct-ans" value="1" min="1" max="4" title="correct answer number">
+        <button type="button" id="inp-add-ques-done" onclick="createQuestionFromDialog()">Done</button>
+      </div>
+    </dialog>
+    <button type="button" id="btn-add-question" onclick="document.getElementById('add-question-dialog').showModal()">Add a question</button>
+    <hr color="#2d2d2d" size="5">
+    <div id="container-questions">
+    </div>
+    <div id="score">Score: <span id="score-number">0</span></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
