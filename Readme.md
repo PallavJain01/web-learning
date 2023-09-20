@@ -1,5 +1,4 @@
 # web-learning
-- Repository created while learning about web development through projects
 
 ### Table of contents
 S.no|Name|Path
