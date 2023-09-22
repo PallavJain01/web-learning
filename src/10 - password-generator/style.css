@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a2a2a;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 10px;
+  width: max-content;
+  background-color: #005092;
+}
+
+#container-password {
+  margin-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 29px;
+  height: 60px;
+  min-width: 24ch;
+  max-width: 35ch;
+  background-color: #023c6b;
+  color: #94ffff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#container-options {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.container-option>input {
+  display: flex;
+  float: right;
+  margin-left: 50px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="number"] {
+  width: 45px !important;
+  height: 30px;
+  font-size: 15px;
+}
+
+label {
+  color: white;
+  font-size: 25px;
+}
+
+#pass-length-option {
+  width: 35px
+}
+
+#btn-generate {
+  all: unset;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 27.5px;
+  color: aqua;
+  margin-top: 15px;
+  background-color: #008ecf;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 200ms linear;
+  cursor: pointer
+}
+
+#btn-generate:hover {
+  background-color: #0073a8;
+}
+
+#btn-generate:active {
+  background-color: #00567e;
+}

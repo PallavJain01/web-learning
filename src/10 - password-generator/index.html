@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/da072b05da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div id="container-main">
+    <p id="container-password"></p>
+    <hr size="1" />
+    <div id="container-options">
+      <div class="container-option">
+        <label for="pass-length-option">Password Length</label>
+        <input type="number" min="1" max="24" value="8" id="pass-length-option">
+      </div>
+      <div class="container-option" >
+        <label for="upper-letters-option">Include Uppercase Letters</label>
+        <input type="checkbox" id="upper-letters-option" checked>
+      </div>
+      <div class="container-option">
+        <label for="lower-letters-option">Include Lowercase Letters</label>
+        <input type="checkbox" id="lower-letters-option" checked>
+      </div>
+      <div class="container-option">
+        <label for="numbers-option">Include Numbers</label>
+        <input type="checkbox" id="number-option" checked>
+      </div>
+      <div class="container-option">
+        <label for="symbols-option">Include Symbols</label>
+        <input type="checkbox" id="symbols-option" checked>
+      </div>
+    </div>
+    <hr size="1" />
+    <button type="button" id="btn-generate" onclick="updatePass()">Generate</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
