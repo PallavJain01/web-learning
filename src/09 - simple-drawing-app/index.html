@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Simple Drawing App</title>
+</head>
+
+<body>
+  <div id="sidebar">
+  <div id="container-tools">
+    <p id="text-toolbar">Toolbar</p>
+    <input type="color" id="inp-stroke-color" value="#ffffff">
+    <input type="color" id="inp-bg-color">
+    <button type="button" id="inp-clear" onclick="clearCanvas()">Clear</button>
+    <div id="container-brushes">
+      <button type="button" id="brush" onclick="activeBrush('brush')">Brush</button>
+      <button type="button" id="erasor" onclick="activeBrush('erasor')">Erasor</button>
+    </div>
+    <div id="container-width">
+      <input type="number" id="inp-stroke-width" min="1" max="10" value="1">
+      <input type="number" id="inp-erasor-width" min="1" max="25" value="1">
+    </div>
+  </div>
+</div>
+  <canvas id="canvas" height="900" width="1600"></canvas>
+  <script src="script.js"></script>
+</body>
+
+</html>

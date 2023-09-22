@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a2a2a;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container-tools {
+  position: absolute;
+  width: max-content;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 10px;
+  height: max-content;
+  padding-left: 10px;
+  padding-top: 10px;
+  > [type="color"] {
+    width: auto;
+  }
+}
+#sidebar{
+  position: absolute;
+  background-color: #353535;
+  height: 100vh;
+  width: 135px;
+}
+
+#text-toolbar {
+  font-size: 32px;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(.25turn, #02fff2, rgb(0, 89, 255));
+  -webkit-background-clip: text;
+}
+
+#container-brushes, #container-width {
+  display: grid;
+  grid-template-columns: auto auto;
+  >button {
+    width: 55px;
+  }
+  >input {
+    width: 55px;
+  }
+}
+
+#canvas {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 15px 10px #101010;
+  cursor: url("cursor.png"), cell;
+}
+
+* {
+  user-select: none;
+}
