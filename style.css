@@ -3,16 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-div#background {
-  background-image: url("./back.svg");
-  background-repeat: no-repeat;
+  background: url("back.svg");
   background-size: cover;
-  height: 75vmax;
-  width: 100%;
-  filter: brightness(50%);
-  position: absolute;
 }
 
 div#container-items {
@@ -84,4 +76,12 @@ div#container-items {
 
 #project-quiz-game {
   background-image: url("./showcase/image/quiz-game.png");
+}
+
+#project-simple-drawing-app {
+  background-image: url("./showcase/image/simple-drawing-app.png");
+}
+
+#project-password-generator {
+  background-image: url("./showcase/image/password-generator.png");
 }
