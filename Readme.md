@@ -2,7 +2,7 @@
 
 ### Table of contents
 
-S.no|Name|Path
+S&period;no|Name|Path
 -|-|-
 01|Loader|[src/01 - Loader](./src/01%20-%20loader/)
 02|Drumkit|[src/02 - Drumkit](./src/02%20-%20Drumkit/)
@@ -14,6 +14,9 @@ S.no|Name|Path
 08|Quiz-Game|[src/08 - quic-game](./src/08%20-%20quiz-game/)
 09|Simple-Drawing-App|[src/09 - simple-drawing-app](./src/09%20-%20simple-drawing-app/)
 10|Password Generator|[src/10 - password-generator](./src/10%20-%20password-generator/)
+11|Random Color Generator|[src/11 - random-color-generator](./src/11%20-%20random-color-generator/)
+12|Todo App|[src/12 - todo-app](./src/12%20-%20todo-app/)
+13|Misc-Calculators|[src/13 - Misc-calculators](./src/13%20-%20Misc-calculators/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
