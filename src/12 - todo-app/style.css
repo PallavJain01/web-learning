@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a2a2a;
+  font-family: 'Roboto', sans-serif;
+}
+
+div#container-main {
+  position: relative;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 50px ;
+  height: fit-content;
+  min-width: 400px;
+  width: fit-content;
+  max-width: 500px;
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#input-main {
+  outline: none;
+  box-shadow: 0 0 1px 1px black;
+  height: 60px;
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5ch;
+  padding: 0.5ch;
+}
+
+#contianer-todos {
+  display: flex;
+  flex-direction: column;
+}
+
+div[id^="todo-"] {
+  min-height: 50px;
+  height: fit-content;
+  text-align: center;
+  padding: 5px 3px;
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #101010;
+  transition: background-color 200ms ease-in-out
+}
+
+div[id^="options-todo-"] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.complete {
+  background-color: #2f2f2f !important;
+}
+
+.complete>.todo-text {
+  color: #f0f0f0a0 !important;
+}
+
+.todo-text {
+  text-align: left;
+  width: 460px;
+  font-size: 25px;
+  line-break: anywhere;
+  color: #f0f0f0;
+}
