@@ -10,3 +10,14 @@ function getElem() {
 
 while (maxIter > 0)
   getElem();
+
+[...mainElem.children].forEach((elem) => {
+  elem.addEventListener("click", (e) => {
+    let elem = (e.target.classList.contains("color-code")) ? e.target.parentElement : e.target;
+    let color = elem.innerText;
+    elem.style.border = `1px solid #${(0xffffff - parseInt(color.replace("#", ""), 16)).toString(16)}`
+    document.body.style.backgroundColor = `${color}`;
+    navigator.clipboard.writeText(color);
+  })
+})
+
