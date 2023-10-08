@@ -17,7 +17,7 @@ S&period;no|Name|Path
 11|Random Color Generator|[src/11 - random-color-generator](./src/11%20-%20random-color-generator/)
 12|Todo App|[src/12 - todo-app](./src/12%20-%20todo-app/)
 13|Misc-Calculators|[src/13 - Misc-calculators](./src/13%20-%20Misc-calculators/)
-14|Character-Counter[src/14 - character-counter](./src/14%20-%20character-counter/)
+14|Character-Counter|[src/14 - character-counter](./src/14%20-%20character-counter/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
