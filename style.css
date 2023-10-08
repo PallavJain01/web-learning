@@ -11,26 +11,26 @@ div#container-items {
   height: fit-content;
   width: fit-content;
   position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto auto;
-  column-gap: 25px;
-  row-gap: 50px;
+  margin: 5% 5%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 35px;
 }
 
 [id^="project-"] {
   all:unset;
   height: 350px;
-  width: 350px;
-  background-color: #fff;
+  width: 400px;
+  background-color: #ffffff40;
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  box-shadow: 0 0 5px 2px #d0d0d050
+  box-shadow: 0 0 5px 2px #d0d0d050;
+  background-image: url("./bgPlaceholder.svg");
+  background-repeat: no-repeat;
 }
 
 .title-project {
@@ -100,4 +100,8 @@ div#container-items {
 
 #project-loan-calculator {
   background-image: url("./showcase/image/loan-calculator.png");
+}
+
+#project-character-counter {
+  background-image: url("./showcase//image/character-counter.png");
 }
