@@ -26,15 +26,15 @@ div#container-items {
   background-color: #ffffff40;
   border-radius: 10px;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  background-position: 0 -10px, 0 -10px;
   cursor: pointer;
   box-shadow: 0 0 5px 2px #d0d0d050;
-  background-image: url("./bgPlaceholder.svg");
   background-repeat: no-repeat;
 }
 
 .title-project {
-  background: linear-gradient(0turn, #000000, #000000a0);
+  background: linear-gradient(0turn, #000000, #00000080);
   height: 35px;
   width: auto;
   position: relative;
@@ -47,61 +47,65 @@ div#container-items {
 }
 
 #project-loader {
-  background-image: url("./showcase/image/loader-img.png");
+  background-image: url("./showcase/image/loader-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-drumkit {
-  background-image: url("./showcase/image/drumkit-img.png");
+  background-image: url("./showcase/image/drumkit-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-clock {
-  background-image: url("./showcase/image/clock-img.png");
+  background-image: url("./showcase/image/clock-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-box-editor {
-  background-image: url("./showcase/image/box-editor-img.png");
+  background-image: url("./showcase/image/box-editor-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-mouse-cursor {
-  background-image: url("./showcase/image/mouse-cursor-img.png");
+  background-image: url("./showcase/image/mouse-cursor-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-glitched-text {
-  background-image: url("./showcase/image/glitched-text-img.png");
+  background-image: url("./showcase/image/glitched-text-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-calculator {
-  background-image: url("./showcase/image/calculator-img.png");
+  background-image: url("./showcase/image/calculator-img.png"), url("./bgPlaceholder.svg");
 }
 
 #project-quiz-game {
-  background-image: url("./showcase/image/quiz-game.png");
+  background-image: url("./showcase/image/quiz-game.png"), url("./bgPlaceholder.svg");
 }
 
 #project-simple-drawing-app {
-  background-image: url("./showcase/image/simple-drawing-app.png");
+  background-image: url("./showcase/image/simple-drawing-app.png"), url("./bgPlaceholder.svg");
 }
 
 #project-password-generator {
-  background-image: url("./showcase/image/password-generator.png");
+  background-image: url("./showcase/image/password-generator.png"), url("./bgPlaceholder.svg");
 }
 
 #project-random-color-generator {
-  background-image: url("./showcase/image/random-color-generator.png");
+  background-image: url("./showcase/image/random-color-generator.png"), url("./bgPlaceholder.svg");
 }
 
 #project-todo-app {
-  background-image: url("./showcase/image/todo-app.png");
+  background-image: url("./showcase/image/todo-app.png"), url("./bgPlaceholder.svg");
 }
 
 #project-temperature-converter {
-  background-image: url("./showcase/image/temperature-converter.png");
+  background-image: url("./showcase/image/temperature-converter.png"), url("./bgPlaceholder.svg");
 }
 
 #project-loan-calculator {
-  background-image: url("./showcase/image/loan-calculator.png");
+  background-image: url("./showcase/image/loan-calculator.png"), url("./bgPlaceholder.svg");
 }
 
 #project-character-counter {
-  background-image: url("./showcase//image/character-counter.png");
+  background-image: url("./showcase//image/character-counter.png"), url("./bgPlaceholder.svg");
+}
+
+#project-rock-paper-scissors {
+  background-image: url("./showcase/image/rock-paper-scissors.png"), url("./bgPlaceholder.svg");
 }
