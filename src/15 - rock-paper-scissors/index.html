@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/da072b05da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+  <div id="container-main">
+    <div id="container-options">
+      <div id="option-rock" onclick="handleClick('rock')"><i class="fa-solid fa-hand-fist fa-2xl"></i></div>
+      <div id="option-paper" onclick="handleClick('paper')"><i class="fa-solid fa-hand fa-2xl"></i></div>
+      <div id="option-scissors" onclick="handleClick('scissors')"><i class="fa-solid fa-hand-peace fa-2xl"></i></div>
+    </div>
+    <hr width="100%">
+    <div id="container-score">
+      <p id="score-user">Your Score: <span class="score-user">0</span></p>
+      <p id="score-computer">Computer Score: <span class="score-computer">0</span></p>
+      <p class="score-ties">Ties: <span class="score-ties">0</span></p>
+    </div>
+    <hr width="100%">
+    <div id="container-output">
+      <p id="output">Choose a move to display output</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

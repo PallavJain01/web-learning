@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+:root{
+  --text: #ffffff;
+  --background: #010f13;
+  --primary: #4dcdf5;
+  --secondary: #03222b;
+  --accent: #009eca;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+}
+
+div#container-main {
+  min-height: 275px;
+  max-height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap:10px;
+  background-color: var(--secondary);
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+div#container-options {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  padding-left: 10px;
+}
+
+div[id^="option"] {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: filter 300ms linear,
+}
+
+div[id^="option"]:hover {
+  filter: brightness(85%)
+}
+
+svg {
+  scale: 1.5;
+  position: relative;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+div[id^="option"]:active {
+  filter: brightness(70%)
+}
+
+#option-rock {
+  background-color: red;
+}
+
+#option-paper {
+  background-color: green;
+}
+
+#option-scissors {
+  background-color: blue;
+}
+
+div#container-score, div#container-output {
+  border-radius: 10px;
+  min-height: 120px;
+  max-height: fit-content;
+  width: 400px;
+  background-color: var(--accent);
+  padding: 10px 0;
+  text-align:center;
+  font-size: x-large;
+}
+
+.score-user {
+  color: blue;
+  font-weight: bold;
+}
+
+.score-computer {
+  color: red;
+  font-weight: bold;
+}
+
+#container-output {
+  min-height: fit-content !important;
+  height: fit-content !important;
+}
