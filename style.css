@@ -3,7 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("back.svg");
+  background-image: url("back.svg");
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -100,6 +101,10 @@ div#container-items {
 
 #project-loan-calculator {
   background-image: url("./showcase/image/loan-calculator.png"), url("./bgPlaceholder.svg");
+}
+
+#project-age-calculator {
+  background-image: url("./showcase/image/age-calculator.png"), url("./bgPlaceholder.svg");
 }
 
 #project-character-counter {
