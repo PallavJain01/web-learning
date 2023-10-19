@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+:root{
+  --text: #ffffff;
+  --background: #010f13;
+  --primary: #4dcdf5;
+  --secondary: #03222b;
+  --accent: #0eb8ec;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+}
+
+div#container-main {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 35px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  row-gap: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center
+}
+
+input#inp-main {
+  outline: none;
+  border: none;
+  padding: 2px;
+  font-size: 17.5px;
+  float: right;
+  height: 30px;
+  background-color: #4f4f4f;
+  box-shadow: 0 0 2px 2px #4f4f4f;
+  color: #e0e0e0
+}
+
+button{
+  all: unset;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 27.5px;
+  color: aqua;
+  margin-top: 15px;
+  background-color: #008ecf;
+  position: relative;
+  text-align:center;
+  cursor: pointer;
+  transition: filter 100ms linear;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+button:active {
+  filter: brightness(80%);
+}
+
+#output {
+  font-size: 25px;
+}
+
+.gradient-text {
+  color: transparent;
+  background-image: linear-gradient(45deg, #ffff00, #00ffff);
+  -webkit-background-clip: text;
+}
