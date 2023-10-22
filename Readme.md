@@ -19,6 +19,7 @@ S&period;no|Name|Path
 13|Misc-Calculators|[src/13 - Misc-calculators](./src/13%20-%20Misc-calculators/)
 14|Character-Counter|[src/14 - character-counter](./src/14%20-%20character-counter/)
 15|Rock-Paper-Scissors|[src/15 - rock-paper-scissors](./src/15%20-%20rock-paper-scissors/)
+16|Tabs|[src/16 - tabs](./src/16%20-%20tabs/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
