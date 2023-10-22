@@ -20,13 +20,13 @@ const
 inpBtn.addEventListener("click", async (_) => {
   let city = inpCity.value;
   if (!city) return;
-  const weatherData = await fetch(`http://api.openweathermap.org/data/2.5/weather?id=524901&appid=${API_KEY}&q=${city}`)
+  const weatherData = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=524901&appid=${API_KEY}&q=${city}`)
   const weather = await weatherData.json();
   if (weatherData.ok) {
     containerWeather.style.display = "flex";
     containerDetails.style.display = "flex";
   }
-  iconElem.innerHTML = `<img src="http://openweathermap.org/img/wn/${weather.weather[0].icon}.png" />`
+  iconElem.innerHTML = `<img src="https://openweathermap.org/img/wn/${weather.weather[0].icon}.png" />`
   tempElem.innerHTML = (weather.main.temp - 273.15).toFixed(0);
   descriptionElem.innerHTML = weather.weather[0].main
   feelsLikeElem.innerHTML = (weather.main.feels_like - 273.15).toFixed(0);
