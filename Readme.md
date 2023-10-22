@@ -21,6 +21,7 @@ S&period;no|Name|Path
 15|Rock-Paper-Scissors|[src/15 - rock-paper-scissors](./src/15%20-%20rock-paper-scissors/)
 16|Tabs|[src/16 - tabs](./src/16%20-%20tabs/)
 17|Mini-Calender|[src/17 - mini-calender](./src/17%20-%20mini-calender/)
+18|Weather-App|[src/18 - weather-app](./src/18%20-%20weather-app/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
