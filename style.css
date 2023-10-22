@@ -122,3 +122,7 @@ div#container-items {
 #project-mini-calender {
   background-image: url("./showcase/image/mini-calender.png"), url("./bgPlaceholder.svg");
 }
+
+#project-weather-app {
+  background-image: url("./showcase/image/weather-app.png"), url("./bgPlaceholder.svg");
+}
