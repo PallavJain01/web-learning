@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+  --text: #ffffff;
+  --background: #010f13;
+  --primary: #4dcdf5;
+  --secondary: #03222b;
+  --accent: #0eb8ec;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+}
+
+div#container-main {
+  width: 1100px;
+  aspect-ratio: 1.5;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div#container-tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #007a7a;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+div#container-tabs-content {
+  height: 100%;
+  margin-top: 10px;
+  background-color: #001920;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+.tab {
+  height: 30px;
+  padding: 0 10px;
+  width: 24%; /*? 100% / tabsCount */
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+}
+
+.tab:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.tab:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.tab:hover {
+  background-color: #03b8b8 !important
+}
+
+.tab[data-active="false"] {
+  background-color: #019c9c
+}
+.tab[data-active="true"] {
+  background-color: #008585 !important
+}
+
+.tab-content {
+  height: 100%;
+  font-size: 20px;
+  line-height: 2.2ch;
+}
+
+.tab-content[data-active="false"] {
+  display: none;
+}
