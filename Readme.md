@@ -20,6 +20,7 @@ S&period;no|Name|Path
 14|Character-Counter|[src/14 - character-counter](./src/14%20-%20character-counter/)
 15|Rock-Paper-Scissors|[src/15 - rock-paper-scissors](./src/15%20-%20rock-paper-scissors/)
 16|Tabs|[src/16 - tabs](./src/16%20-%20tabs/)
+17|Mini-Calender|[src/17 - mini-calender](./src/17%20-%20mini-calender/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
