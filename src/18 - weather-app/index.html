@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/da072b05da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Weather app</title>
+</head>
+<body>
+  <div id="container-main">
+    <div id="title">Weather App</div>
+    <div id="container-input">
+      <input type="text" id="inp-city" spellcheck="false" autocomplete="false" autofocus="true">
+      <button type="button" id="inp-get-weather">Get Weather</button>
+    </div>
+    <div id="container-weather">
+      <div id="icon"><img src="http://openweathermap.org/img/wn/04n.png"></div>
+      <div id="temp"><span></span>°C</div>
+      <div id="description"></div>
+    </div>
+    <div id="container-details">
+      <div id="feels-like">Feels like: <span></span></div>
+      <div id="humidity">Humidity: <span></span>%</div>
+      <div id="wind-speed">Wind speed: <span></span>m/s</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
