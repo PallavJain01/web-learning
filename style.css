@@ -118,3 +118,7 @@ div#container-items {
 #project-tabs {
   background-image: url("./showcase/image/tabs.png"), url("./bgPlaceholder.svg");
 }
+
+#project-mini-calender {
+  background-image: url("./showcase/image/mini-calender.png"), url("./bgPlaceholder.svg");
+}
