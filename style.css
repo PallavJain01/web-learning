@@ -114,3 +114,7 @@ div#container-items {
 #project-rock-paper-scissors {
   background-image: url("./showcase/image/rock-paper-scissors.png"), url("./bgPlaceholder.svg");
 }
+
+#project-tabs {
+  background-image: url("./showcase/image/tabs.png"), url("./bgPlaceholder.svg");
+}
