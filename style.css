@@ -127,3 +127,7 @@ div#container-items {
 #project-weather-app {
   background-image: url("./showcase/image/weather-app.png"), url("./bgPlaceholder.svg");
 }
+
+#project-digital-clock {
+  background-image: url("./showcase/image/digital-clock.png"), url("./bgPlaceholder.svg");
+}
