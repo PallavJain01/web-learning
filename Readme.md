@@ -22,6 +22,7 @@ S&period;no|Name|Path
 16|Tabs|[src/16 - tabs](./src/16%20-%20tabs/)
 17|Mini-Calender|[src/17 - mini-calender](./src/17%20-%20mini-calender/)
 18|Weather-App|[src/18 - weather-app](./src/18%20-%20weather-app/)
+19|Digtal-Clock|[src/19 - digital-clock](./src/19%20-%20digital-clock/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
