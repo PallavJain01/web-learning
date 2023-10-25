@@ -131,3 +131,7 @@ div#container-items {
 #project-digital-clock {
   background-image: url("./showcase/image/digital-clock.png"), url("./bgPlaceholder.svg");
 }
+
+#project-image-recolorizer {
+  background-image: url("./showcase/image/image-recolorizer.png"), url("./bgPlaceholder.svg");
+}
