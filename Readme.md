@@ -23,6 +23,7 @@ S&period;no|Name|Path
 17|Mini-Calender|[src/17 - mini-calender](./src/17%20-%20mini-calender/)
 18|Weather-App|[src/18 - weather-app](./src/18%20-%20weather-app/)
 19|Digtal-Clock|[src/19 - digital-clock](./src/19%20-%20digital-clock/)
+20|Image-Recolorizer|[src/20 - image-recolorizer](./src/20%20-%20image-recolorizer/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
