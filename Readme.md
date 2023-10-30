@@ -24,6 +24,7 @@ S&period;no|Name|Path
 18|Weather-App|[src/18 - weather-app](./src/18%20-%20weather-app/)
 19|Digtal-Clock|[src/19 - digital-clock](./src/19%20-%20digital-clock/)
 20|Image-Recolorizer|[src/20 - image-recolorizer](./src/20%20-%20image-recolorizer/)
+21|Text-Typing-Animation|[src/21 - text-typing-animation](./src/21%20-%20text-typing-animation/)
 
 #### [View Live preview](https://pallavjain01.github.io/web-learning)
 
