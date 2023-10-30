@@ -1,0 +1,94 @@
+[
+  {
+    "title": "loader",
+    "path": "01 - loader"
+  },
+  {
+    "title": "drumkit",
+    "path": "02 - Drumkit"
+  },
+  {
+    "title": "clock",
+    "path": "03 - Clock"
+  },
+  {
+    "title": "box-editor",
+    "path": "04 - box-editor"
+  },
+  {
+    "title": "mouse-cursor",
+    "path": "05 - mouse-cursor"
+  },
+  {
+    "title": "glitched-text",
+    "path": "06 - glitched-text"
+  },
+  {
+    "title": "calculator",
+    "path": "07 - calculator"
+  },
+  {
+    "title": "quiz-game",
+    "path": "08 - quiz-game"
+  },
+  {
+    "title": "simple-drawing-app",
+    "path": "09 - simple-drawing-app"
+  },
+  {
+    "title": "password-generator",
+    "path": "10 - password-generator"
+  },
+  {
+    "title": "random-color-generator",
+    "path": "11 - random-color-generator"
+  },
+  {
+    "title": "todo-app",
+    "path": "12 - todo-app"
+  },
+  {
+    "title": "temperature-converter",
+    "path": "13 - Misc-calculators/01 - Temperature-Converter"
+  },
+  {
+    "title": "loan-calculator",
+    "path": "13 - Misc-calculators/02 - Loan-Calculator"
+  },
+  {
+    "title": "age-calculator",
+    "path": "13 - Misc-calculators/03 - age-calculator"
+  },
+  {
+    "title": "character-counter",
+    "path": "14 - character-counter"
+  },
+  {
+    "title": "rock-paper-scissors",
+    "path": "15 - rock-paper-scissors"
+  },
+  {
+    "title": "tabs",
+    "path": "16 - tabs"
+  },
+  {
+    "title": "mini-calender",
+    "path": "17 - mini-calender"
+  },
+  {
+    "title": "weather-app",
+    "path": "18 - weather-app"
+  },
+  {
+    "title": "digital-clock",
+    "path": "19 - digital-clock"
+  },
+  {
+    "title": "image-recolorizer",
+    "path": "20 - image-recolorizer"
+  },
+  {
+    "title": "text-typing-animation",
+    "path": "21 - text-typing-animation"
+  }
+]

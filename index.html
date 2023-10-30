@@ -1,78 +1,80 @@
-<!--! File for the main page in https://pallavjain01.github.io/web-learning !-->
-
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
   <title>Projects | PallavJain01</title>
+
+  <script type="module">
+    import data from "./data.json" assert {type: "json"};
+    const containerMain = document.getElementById("container-items");
+    let
+      out = "",
+      style = "";
+    ;
+    data.forEach(line => {
+      let
+        title = line.title,
+        titleCapitalized = `${title[0].toUpperCase()}` + title.replace("-", " ").replace("-", " ").slice(1, title.length);
+      ;
+      out += `<a id="project-${title}" href="./src/${line.path}/index.html" target="_blank"><div class="title-project">${titleCapitalized}</div></a>`;
+      style += `#project-${title}{background-image:url("./showcase/image/${title}.png"),url("./bgPlaceholder.svg")}`;
+    })
+    containerMain.innerHTML = out;
+    document.querySelector("style").innerHTML += style;
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("back.svg");
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    div#container-items {
+      height: fit-content;
+      width: fit-content;
+      position: absolute;
+      margin: 5% 5%;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 15px;
+      row-gap: 35px;
+      justify-content: center;
+    }
+
+    [id^="project-"] {
+      all: unset;
+      height: 350px;
+      width: 400px;
+      background-color: #ffffff40;
+      border-radius: 10px;
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-position: 0 -10px, 0 -10px;
+      cursor: pointer;
+      box-shadow: 0 0 5px 2px #d0d0d050;
+      background-repeat: no-repeat;
+    }
+
+    .title-project {
+      background: linear-gradient(0turn, #000000, #00000080);
+      height: 35px;
+      width: auto;
+      position: relative;
+      top: 90%;
+      color: #d0d0d0;
+      font-family: 'Roboto';
+      font-size: 25px;
+      text-align: center;
+      padding-top: 5px;
+    }
+  </style>
+
 </head>
 <body background="back.svg" bgproperties="fixed">
-  <div id="container-items">
-    <a id="project-loader" href="./src/01 - loader/index.html" target="_blank">
-      <div class="title-project">Loading Animation</div>
-    </a>
-    <a id="project-drumkit" href="./src/02 - Drumkit/index.html" target="_blank">
-      <div class="title-project">Drumkit</div>
-    </a>
-    <a id="project-clock" href="./src/03 - Clock/index.html" target="_blank">
-      <div class="title-project">Clock</div>
-    </a>
-    <a id="project-box-editor" href="./src/04 - box-editor/index.html" target="_blank">
-      <div class="title-project">Box-editor</div>
-    </a>
-    <a id="project-mouse-cursor" href="./src/05 - mouse-cursor/index.html" target="_blank">
-      <div class="title-project">Mouse Cursor</div>
-    </a>
-    <a id="project-glitched-text" href="./src/06 - glitched-text/index.html" target="_blank">
-      <div class="title-project">Glitched Text</div>
-    </a>
-    <a id="project-calculator" href="./src/07 - calculator/index.html" target="_blank">
-      <div class="title-project">Calculator</div>
-    </a>
-    <a id="project-quiz-game" href="./src/08 - quiz-game/index.html" target="_blank">
-      <div class="title-project">Quiz Game</div>
-    </a>
-    <a id="project-simple-drawing-app" href="./src/09 - simple-drawing-app/index.html" target="_blank">
-      <div class="title-project">Simple Drawing App</div>
-    </a>
-    <a id="project-password-generator" href="./src/10 - password-generator/index.html" target="_blank">
-      <div class="title-project">Password Generator</div>
-    </a>
-    <a id="project-random-color-generator" href="./src/11 - random-color-generator/index.html" target="_blank">
-      <div class="title-project">Random Color Generator</div>
-    </a>
-    <a id="project-todo-app" href="./src/12 - todo-app/index.html" target="_blank">
-      <div class="title-project">Todo App</div>
-    </a>
-    <a id="project-temperature-converter" href="./src/13 - Misc-calculators/01 - Temperature-Converter/index.html" target="_blank">
-      <div class="title-project">Temperature Converter</div>
-    </a>
-    <a id="project-loan-calculator" href="./src/13 - Misc-calculators/02 - Loan-Calculator/index.html" target="_blank">
-      <div class="title-project">Loan Calculator</div>
-    </a>
-    <a id="project-age-calculator" href="./src/13 - Misc-calculators/03 - age-calculator/" target="_blank">
-      <div class="title-project">Age Calculator</div>
-    </a>
-    <a id="project-character-counter" href="./src/14 - character-counter/" target="_blank">
-      <div class="title-project">Character Counter</div>
-    </a>
-    <a id="project-rock-paper-scissors" href="./src/15 - rock-paper-scissors/" target="_blank">
-      <div class="title-project">Rock Paper Scissors</div>
-    </a>
-    <a id="project-tabs" href="./src/16 - tabs/" target="_blank">
-      <div class="title-project">Tabs</div>
-    </a>
-    <a id="project-mini-calender" href="./src/17 - mini-calender/" target="_blank">
-      <div class="title-project">Mini Calender</div>
-    </a>
-    <a id="project-weather-app" href="./src/18 - weather-app/" target="_blank">
-      <div class="title-project">Weather App</div>
-    </a>
-    <a id="project-digital-clock" href="./src/19 - digital-clock/" target="_blank">
-      <div class="title-project">Digital Clock</div>
-    </a>
-    <a id="project-image-recolorizer" href="./src/20 - image-recolorizer/" target="_blank">
-      <div class="title-project">Image Recolorizer</div>
-    </a>
-  </div>
+  <div id="container-items"></div>
 </body>
 </html>
