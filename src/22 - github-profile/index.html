@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/da072b05da.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Github Profile</title>
+
+</head>
+
+<body>
+  <div id="container-main">
+    <div id="container-input">
+      <label for="inp-username">Username: </label>
+      <input type="text" id="inp-username" spellcheck="false" value="PallavJain01">
+      <button type="button" id="btn-main" onclick="">Get Profile</button>
+    </div>
+    <div id="data-main">
+      <div id="container-logo"></div>
+      <div id="container-details">
+        <p><i class="fa-solid fa-user"></i><span id="username"></span></p>
+        <p><i class="fa-solid fa-user-group"></i><span id="followers-following"><span></span>&nbsp;followers <b>·</b> <span></span>&nbsp;following</span></p>
+        <p><i class="fa-solid fa-location-dot"></i><span id="location"></span></p>
+      </div>
+    </div>
+    <div id="container-repos"></div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    let inpMain = document.getElementById('inp-username');
+    document.getElementById("btn-main").addEventListener("click", (_) => {
+      if (!inpMain.value) return;
+      else
+        updateProfile(inpMain.value);
+    })
+  </script>
+</body>
+
+</html>
