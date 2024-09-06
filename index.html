@@ -4,22 +4,31 @@
   <title>Projects | PallavJain01</title>
 
   <script type="module">
-    import data from "./data.json" assert {type: "json"};
-    const containerMain = document.getElementById("container-items");
-    let
-      out = "",
-      style = "";
-    ;
-    data.forEach(line => {
-      let
-        title = line.title,
-        titleCapitalized = `${title[0].toUpperCase()}` + title.replace("-", " ").replace("-", " ").slice(1, title.length);
-      ;
-      out += `<a id="project-${title}" href="./src/${line.path}/index.html" target="_blank"><div class="title-project">${titleCapitalized}</div></a>`;
-      style += `#project-${title}{background-image:url("./showcase/image/${title}.png"),url("./bgPlaceholder.svg")}`;
+     let data = []
+    fetch('./data.json')
+    .then(res => {
+      return res.json()
+    }).then(jsonData => {
+      data = jsonData
+      initApp()
     })
-    containerMain.innerHTML = out;
-    document.querySelector("style").innerHTML += style;
+    function initApp() {
+      const containerMain = document.getElementById("container-items");
+      let
+        out = "",
+        style = "";
+      ;
+      data.forEach(line => {
+        let
+          title = line.title,
+          titleCapitalized = `${title[0].toUpperCase()}` + title.replace("-", " ").replace("-", " ").slice(1, title.length);
+        ;
+        out += `<a id="project-${title}" href="./src/${line.path}/index.html" target="_blank"><div class="title-project">${titleCapitalized}</div></a>`;
+        style += `#project-${title}{background-image:url("./showcase/image/${title}.png"),url("./bgPlaceholder.svg")}`;
+      })
+      containerMain.innerHTML = out;
+      document.querySelector("style").innerHTML += style;
+    }
   </script>
 
   <style>
